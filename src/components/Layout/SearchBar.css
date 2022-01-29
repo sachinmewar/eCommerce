@@ -1,0 +1,13 @@
+
+
+.search-bar{
+    height: 2.5rem;
+    width: 8rem;
+    margin-top: 15rem;
+}
+
+.search-bar #headerSearch {
+    height: 2.5rem;
+    width: 8rem;
+    margin: 0rem;
+}
