@@ -1,0 +1,28 @@
+.productItem-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-basis: 30%;
+    align-items: center;
+    margin: 1rem 0;
+    height: 28rem;
+    width: 15rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    color: black;
+  }
+  
+  .productItem-container #name, #price{
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .productItem-container:hover {
+    cursor: pointer;
+    background-color: rgb(0, 153, 255);
+    color: white;
+  }
+  
