@@ -1,11 +1,11 @@
-import useFetch from "../../hooks/use-fetch";
-import ProductImage from "./ProductImage";
 
+import useFetch from "../../hooks/use-fetch";
 import ProductItem from "./ProductItem";
 import "./ProductList.css";
 
-const ProductList = () => {
-    const {data, loading, error} = useFetch('https://fakestoreapi.com/products');
+const ProductList = (props) => {
+    const url = props.url;
+    const {data, loading} = useFetch(url);
     var productData;
 
     if(data != null){
@@ -22,6 +22,8 @@ const ProductList = () => {
         )
     }
     
+    console.log();
+
     return(
         <div className="productList-container">
             {productData}
