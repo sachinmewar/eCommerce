@@ -1,17 +1,24 @@
 import CartButton from './CartButton';
-import CartIcon from './CartIcon';
 import './Navigation.css';
+import WishlistButton from './WishlistButton';
+import Category from '../Category/Category';
 
-const Navigation = () => {
-    return(
+
+const Navigation = ({setCategoryFilterValue}) => {
+
+  const getCategoryFilterValueHandler = (categoryFilterValue) => {
+    setCategoryFilterValue(categoryFilterValue);
+  }
+  
+
+  return(
         <header className="navigation-container"> 
           <div id='logo'> eCommerce </div>
-          <div id='category'> category </div>
-          <div id='searchBar'> </div>
-          <div id='searchIcon'> searchIcon </div>
-          <CartButton></CartButton>
+          <Category getFilterValue = {getCategoryFilterValueHandler}/>
+          {/* <SearchBar />  */}
+          <WishlistButton />
+          <CartButton />
         </header>
-
     )
 }
 

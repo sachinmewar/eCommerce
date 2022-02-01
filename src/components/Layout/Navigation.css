@@ -20,27 +20,3 @@
     font-weight: 800;
     font-size: larger;
 }
-
-.navigation-container #category{
-    
-    margin: 1rem 0rem 1rem;
-    margin-bottom: 2rem;
-    margin-left: 5rem;
-    color: tomato;
-    margin-right: 0rem;
-}
-
-.navigation-container #searchBar{
-    align-items: center;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-    width: 10rem;
-    background-color: white;
-    border-radius: 1rem;
-    height: 2.5rem;
-}
-
-.navigation-container #searchButton{
-    width: 8rem;
-    height: 2rem
-}
