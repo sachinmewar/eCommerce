@@ -1,18 +1,17 @@
 .cart-button {
     cursor: pointer;
-    margin: 0rem;
     width: 7rem;
-    height: 4rem;
-    margin-left: 5rem;
+    height: 3rem;
+    margin: 0.5rem 1rem 0.5rem 2.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-weight: 750;
     font-size: 1.25rem;
-    border: none;
     background-color: black;
     color: white;
-  }
+    border: none;
+   }
 
   .cart-button #cartIcon {
     width: 2rem;
@@ -24,7 +23,7 @@
 .cart-button:active {
     border-style: solid;
     border-color: white;
-    padding: 0rem;
+    border-width: 0.1rem;
 }
 
 
