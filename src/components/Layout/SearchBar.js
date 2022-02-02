@@ -2,10 +2,22 @@ import './SearchBar.css'
 import SearchButton from './SearchButton';
 
 const SearchBar = () => {
+
+    const clickButtonHandler = () => {
+        console.log("Search button Clicked");
+    }
+
     return(
-        <form className='search-bar'>
-            <input type='text' id='header-search'> </input>
-        </form>
+        <form>
+        <div className='searchBar-container'>
+            <input type="text"/>
+        </div>
+        {/* <div className='new-expense__actions'>
+          <button type = "submit" onClick={clickButtonHandler}>
+              submit
+          </button> */}
+        {/* </div> */}
+      </form>
     );
 }
 
