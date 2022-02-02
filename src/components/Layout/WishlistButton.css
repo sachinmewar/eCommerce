@@ -1,0 +1,25 @@
+
+.wishlist-button{
+    width: 7rem;
+    height: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin: 0.5rem 1rem 0.5rem 2.5rem;
+    border: none;
+}
+
+.wishlist-button #text{
+    font-weight: 2rem;
+    font-size: large;
+}
+
+.wishlist-button:hover,
+.wishlist-button:active {
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: white;
+}
