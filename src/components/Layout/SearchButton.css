@@ -1,0 +1,32 @@
+
+
+.search-button {
+    cursor: pointer;
+    width: 5rem;
+    height: 3rem;
+    margin: 0.5rem 1rem 0.5rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 750;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    border: none;
+   }
+
+  .search-button #searchIcon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.25rem;
+  }
+
+.search-button:hover,
+.search-button:active {
+    border-style: solid;
+    border-color: white;
+    border-width: 0.1rem;
+}
+
+
+  
