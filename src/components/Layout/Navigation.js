@@ -6,15 +6,10 @@ import SearchBar from './SearchBar';
 
 const Navigation = ({setCategoryFilterValue}) => {
 
-  const getCategoryFilterValueHandler = (categoryFilterValue) => {
-    setCategoryFilterValue(categoryFilterValue);
-  }
-  
-
   return(
         <header className="navigation-container"> 
           <div id='logo'> eCommerce </div>
-          <Category getFilterValue = {getCategoryFilterValueHandler}/>
+          <Category />
           <SearchBar /> 
           <WishlistButton />
           <CartButton />
