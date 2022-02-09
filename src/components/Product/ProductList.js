@@ -8,9 +8,6 @@ const ProductList = (props) => {
     const {data, loading} = useFetch(url);
     var productData;
 
-    const onImageClickHandler = (productDetails) => {
-        props.onImageClick(productDetails)
-    }
 
     if(data != null){
         productData = data.map( (productValue) =>
@@ -23,7 +20,6 @@ const ProductList = (props) => {
                imageUrl = {productValue.image}
                rating = {productValue.rating}
                price = {productValue.price}
-               onImageClick = {onImageClickHandler}
             />
         )
     }
