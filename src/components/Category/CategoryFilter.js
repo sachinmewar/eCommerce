@@ -1,7 +1,11 @@
 
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import './CategoryFilter.css';
 
 const CategoryFilter = ({value, getCategoryFilterValue}) => {
+
+    let history = useHistory();
+
     
     const filterCategory = [
         { id: '1', label: 'All', value: 'all' },
@@ -11,15 +15,19 @@ const CategoryFilter = ({value, getCategoryFilterValue}) => {
         { id: '5', label: 'Jewelery', value: "jewelery"}
      ];
      
+     var Url;
+     
      const onClickCategoryFilterHandler = (event) => {
-        getCategoryFilterValue(event.target.value);
+        history.push(`/product/${event.target.value}`);
      };
   
     return(
         <select className = "category-container" value={value} onChange={onClickCategoryFilterHandler}>
-        {filterCategory.map(category =>
-           <option key={category.id} value={category.value}> {category.label} </option>
-        )}
+        { filterCategory.map(category => 
+            <option key={category.id} label = {category.label} value={category.value}>
+                {category.label}
+            </option>
+        )} 
         </select>
     );
 }

@@ -4,12 +4,8 @@ import CategoryFilter from "./CategoryFilter";
 
 const Category = ({getFilterValue}) => {
 
-    const getCategoryFilterValueHandler = (categoryFilterValue) => {
-        getFilterValue(categoryFilterValue);
-    }
-
     return(
-        <CategoryFilter getCategoryFilterValue={getCategoryFilterValueHandler} />
+        <CategoryFilter  />
     );
 }
 
