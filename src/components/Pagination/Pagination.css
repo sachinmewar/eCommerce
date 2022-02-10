@@ -1,0 +1,35 @@
+
+
+.pagination-container{
+    height: auto;
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-container button{
+    width: 8rem;
+    height: 2rem;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+    margin: 1rem;
+}
+
+
+.pagination-container button:hover{
+    cursor: pointer;
+    top: 50px;
+    left: 50px;
+}
+
+.pagination-container #pageNumber {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: large;
+}
